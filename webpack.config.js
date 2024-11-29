@@ -22,15 +22,15 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/, // Додано правило для обробки CSS
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.scss$/, // Додаємо правило для SCSS
+        test: /\.scss$/, 
         use: [
-          'style-loader', // Вставляє CSS в DOM
-          'css-loader',   // Обробляє CSS імпорти
-          'sass-loader',  // Компілює SCSS в CSS
+          'style-loader', 
+          'css-loader',  
+          'sass-loader',  
         ],
       },
     ],
